@@ -1,6 +1,6 @@
 {
   "name": "product-inventory-statuses",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "product stock status indicator",
   "main": "index.cjs",
   "module": "index.js",

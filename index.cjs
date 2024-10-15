@@ -41,8 +41,8 @@ function calculateProductStatus(publicationdate, inventories) {
 
   // ha nincs készlet és ismert a kiadás dátuma és később van, mint a mai nap
   const pupdate = new Date(publicationdate);
+  const now = new Date();
   if (!isNaN(pupdate.getTime())) {
-    const now = new Date();
     if (shopc < 1 && gardnersc < 1 && pupdate > now) {
       return 40; // 40: "We accept pre-orders" (eredeti: 4: "We accept pre-orders")
     }
