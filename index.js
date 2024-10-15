@@ -21,7 +21,7 @@
  *    - 4: "We accept pre-orders"
  */
 
-function calculateProductStatus(publicationdate = null, inventories = []) {
+export function calculateProductStatus(publicationdate, inventories) {
 
   // DB FIX: hibás string kezelés:
   if (publicationdate === 'notset' || publicationdate === null) {
@@ -78,8 +78,3 @@ function calculateProductStatus(publicationdate = null, inventories = []) {
 
   return 60; // 60: Alapértelmezett, nincs információ (eredeti: "")
 }
-
-// a függvény exportálása
-module.exports = {
-calculateProductStatus
-};
